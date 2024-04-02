@@ -10,7 +10,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "catatanBelajar")
+@Table(name = "catatanbelajar")
 public class catatanBelajar {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -40,7 +40,7 @@ public class catatanBelajar {
     public catatanBelajar() {
     }
 
-    public catatanBelajar(long id_catatan, String judul_catatan, String isi_catatan, String id_tag, String id_akun,
+    public catatanBelajar(Long id_catatan, String judul_catatan, String isi_catatan, String id_tag, String id_akun,
             Privasi privasi) {
         this.id_catatan = id_catatan;
         this.judul_catatan = judul_catatan;
@@ -58,27 +58,27 @@ public class catatanBelajar {
         this.id_catatan = id_catatan;
     }
 
-    public String getJudul() {
+    public String getJudul_catatan() {
         return judul_catatan;
     }
 
-    public void setJudul(String judul_catatan) {
+    public void setJudul_catatan(String judul_catatan) {
         this.judul_catatan = judul_catatan;
     }
 
-    public String getIsi() {
+    public String getIsi_catatan() {
         return isi_catatan;
     }
 
-    public void setIsi(String isi_catatan) {
+    public void setIsi_catatan(String isi_catatan) {
         this.isi_catatan = isi_catatan;
     }
 
-    public String getIdTag() {
+    public String getId_tag() {
         return id_tag;
     }
 
-    public void setIdTag(String id_tag) {
+    public void setId_tag(String id_tag) {
         this.id_tag = id_tag;
     }
 
